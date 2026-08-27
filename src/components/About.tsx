@@ -1,17 +1,15 @@
 import Image from "next/image";
 import { Reveal } from "./Reveal";
-import { unsplash } from "@/lib/utils";
 
 export function About() {
   return (
     <section id="about" className="bg-cream py-24 md:py-32">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-6 md:grid-cols-2 md:gap-20 md:px-10">
         <Reveal>
-          {/* PLACEHOLDER: swap for client photo — Mafleurr at work / studio */}
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm">
             <Image
-              src={unsplash("1559211033-2aa7f2fbb31a", 1000)}
-              alt="Florist hand-tying a bespoke arrangement"
+              src="/studio-fresh-stems.jpeg"
+              alt="Fresh flower stems sourced for Mafleurr's bespoke arrangements"
               fill
               className="object-cover"
               sizes="(min-width: 768px) 45vw, 90vw"

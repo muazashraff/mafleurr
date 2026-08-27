@@ -14,9 +14,9 @@ export const SITE = {
 };
 
 export const NAV_LINKS = [
+  { label: "Flower Quiz", href: "#quiz" },
   { label: "About", href: "#about" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "Flower Quiz", href: "#quiz" },
   { label: "Events", href: "#events" },
   { label: "Contact", href: "#contact" },
 ];

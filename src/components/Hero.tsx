@@ -51,7 +51,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Logo variant="light" className="text-5xl md:text-6xl" />
+          <Logo variant="light" className="h-14 md:h-20" />
         </motion.div>
 
         <motion.h1

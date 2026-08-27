@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-ink py-14 text-cream">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 text-center md:px-10">
-        <Logo variant="light" className="text-3xl" />
+        <Logo variant="light" className="h-9" />
 
         <ul className="flex flex-wrap justify-center gap-x-8 gap-y-3">
           {NAV_LINKS.map((link) => (

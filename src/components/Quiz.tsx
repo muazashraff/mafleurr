@@ -207,7 +207,7 @@ export function Quiz() {
                       }}
                       className="flex flex-col overflow-hidden rounded-sm border border-ink/10 bg-cream shadow-[0_20px_60px_-30px_rgba(10,10,10,0.3)]"
                     >
-                      {/* PLACEHOLDER: swap for client photo — {bouquet.name} */}
+                      {/* real Mafleurr photography, except bouquets flagged isPlaceholder in data/quiz.ts */}
                       <div className="relative aspect-[4/3] w-full">
                         <Image
                           src={bouquet.image}

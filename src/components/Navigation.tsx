@@ -32,7 +32,7 @@ export function Navigation() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
         <Link href="#top" className="shrink-0" aria-label="Mafleurr home">
-          <Logo variant="light" className="text-2xl md:text-3xl" />
+          <Logo variant="light" className="h-8 md:h-9" />
         </Link>
 
         <ul className="hidden items-center gap-9 lg:flex">

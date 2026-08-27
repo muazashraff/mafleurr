@@ -35,7 +35,6 @@ export function Events() {
           {EVENTS_FEATURES.map((feature, i) => (
             <Reveal key={feature.id} delay={i * 0.12}>
               <div className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-gold/20">
-                {/* PLACEHOLDER: swap for client photo — {feature.name} */}
                 <div className="relative aspect-[16/10] w-full overflow-hidden">
                   <Image
                     src={feature.image}
@@ -62,7 +61,6 @@ export function Events() {
         <Reveal delay={0.2} className="mt-14">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
             {EVENTS_GALLERY.map((src, i) => (
-              // PLACEHOLDER: swap for client photo — events gallery image
               <div
                 key={src + i}
                 className="relative aspect-square overflow-hidden rounded-sm"

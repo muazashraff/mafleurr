@@ -84,7 +84,7 @@ export function Portfolio() {
                 onClick={() => setLightbox({ image: item.image, title: item.title })}
                 className="group relative mb-4 block w-full overflow-hidden rounded-sm text-left"
               >
-                {/* PLACEHOLDER: swap for client photo — {item.title} */}
+                {/* real Mafleurr photography, except items flagged isPlaceholder in data/portfolio.ts */}
                 <div
                   className={cn(
                     "relative w-full overflow-hidden bg-ink/5",

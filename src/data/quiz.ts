@@ -132,6 +132,8 @@ export type Bouquet = {
   image: string;
   colours: ColourPalette[];
   styles: Style[];
+  /** true only for the Unsplash stand-ins still awaiting a matching real photo */
+  isPlaceholder?: boolean;
 };
 
 // PLACEHOLDER: mock bouquet catalogue for the quiz result screen. Names,
@@ -142,8 +144,8 @@ export const BOUQUETS: Bouquet[] = [
     id: "blush-romance",
     name: "The Blush Romance",
     description:
-      "Trailing garden roses and ranunculus in the softest blush and ivory tones, finished with delicate trailing greenery for an effortlessly romantic silhouette.",
-    image: unsplash("1786085801598-1e43ba68eb5a"),
+      "A soft, hand-tied garden bouquet in blush, ivory and yellow tones, gathered with roses, dahlias and calla lilies for an effortlessly romantic finish.",
+    image: "/bridal-blush-garden.jpeg",
     colours: ["Blush & Ivory", "Pastels"],
     styles: ["Classic & Romantic"],
   },
@@ -151,8 +153,8 @@ export const BOUQUETS: Bouquet[] = [
     id: "ivory-dream",
     name: "Ivory Dream",
     description:
-      "A refined study in white and green — lisianthus, hellebore and eucalyptus composed with an editorial, hand-tied elegance.",
-    image: unsplash("1612539088954-329d75033480"),
+      "A refined study in ivory and gold — dried roses, cotton and pampas composed with an editorial, sculptural elegance that lasts for years.",
+    image: "/dried-ivory-gold.jpeg",
     colours: ["White & Green", "Blush & Ivory"],
     styles: ["Classic & Romantic", "Modern & Structured"],
   },
@@ -160,8 +162,8 @@ export const BOUQUETS: Bouquet[] = [
     id: "wild-burgundy",
     name: "Wild Burgundy",
     description:
-      "Deep burgundy dahlias and garden foliage, gathered with a loose, just-picked hand for a moody, romantic statement.",
-    image: unsplash("1623672655496-1537b4d84eb4"),
+      "Deep burgundy roses gathered with dried grasses and gilded accents, hand-tied with a loose, just-picked romance.",
+    image: "/bridal-wild-burgundy.jpeg",
     colours: ["Deep Reds & Burgundy"],
     styles: ["Wild & Natural", "Classic & Romantic"],
   },
@@ -169,8 +171,8 @@ export const BOUQUETS: Bouquet[] = [
     id: "structured-noir",
     name: "Structured Noir",
     description:
-      "Architectural stems in deep burgundy and near-black tones, composed with sculptural precision for a bold, modern statement.",
-    image: unsplash("1614526299531-5b5af911f22b"),
+      "Architectural dried stems in near-black and silver tones, punctuated with ivory roses and feather accents for a bold, modern statement.",
+    image: "/dried-noir-ivory.jpeg",
     colours: ["Deep Reds & Burgundy", "Bold & Vibrant"],
     styles: ["Modern & Structured"],
   },
@@ -182,6 +184,7 @@ export const BOUQUETS: Bouquet[] = [
     image: unsplash("1623672655530-2fd989eb9860"),
     colours: ["Pastels", "Blush & Ivory"],
     styles: ["Classic & Romantic", "Wild & Natural"],
+    isPlaceholder: true,
   },
   {
     id: "vivid-bloom",
@@ -191,13 +194,14 @@ export const BOUQUETS: Bouquet[] = [
     image: unsplash("1487528699198-88d79d72479f"),
     colours: ["Bold & Vibrant"],
     styles: ["Wild & Natural", "Modern & Structured"],
+    isPlaceholder: true,
   },
   {
     id: "dried-meadow",
     name: "The Dried Meadow",
     description:
-      "An everlasting mix of dried pampas, bunny tail and preserved foliage in warm neutral tones — a keepsake that lasts for years.",
-    image: unsplash("1622658641558-235f26dd270b"),
+      "An everlasting mix of dried pampas, feathers and preserved foliage in warm neutral tones, gathered in a speckled vase — a keepsake that lasts for years.",
+    image: "/dried-meadow-ivory.jpeg",
     colours: ["White & Green", "Blush & Ivory", "Pastels"],
     styles: ["Dried & Textural"],
   },
@@ -205,8 +209,8 @@ export const BOUQUETS: Bouquet[] = [
     id: "textural-earth",
     name: "Textural Earth",
     description:
-      "Sculptural dried stems and rich burgundy grasses layered for depth and texture — a striking, long-lasting statement piece.",
-    image: unsplash("1533801956226-12d07083ca61"),
+      "Sculptural dried stems, gilded pods and rich burgundy tones layered for depth and texture — a striking, long-lasting statement piece.",
+    image: "/dried-textural-burgundy.jpeg",
     colours: ["Deep Reds & Burgundy", "Bold & Vibrant"],
     styles: ["Dried & Textural", "Modern & Structured"],
   },
